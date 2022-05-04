@@ -24,13 +24,9 @@ The Matlab code for the SBE was written by Joris Eggenhuisen & Mike Tilston. See
 
 ## Potential Improvements 
 
-Major development themes:
+Development potential:
 - Facilitate single-flow parameterisation (deterministic instead of stochastic)
-- Record specific boundary conditions used for each individual result stored in the SimResults.s structure
 - Facilitate non-uniform sampling of boundary condition ranges (e.g. normal or log-normal distributions) 
-
-Code, syntax, bugs:
-- Modernise and simplify code for data-structure initiation
 - Auto-adjust 'steps' parameter to the boundary condition range.
 
 ## Changelog
