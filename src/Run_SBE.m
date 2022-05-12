@@ -35,7 +35,7 @@ clearvars -except SimParams SimConds %Clean up the workspace;
 %% Runs the simulation
 
     [D,Deltay,ybed,Ubed,Cbed,ush, Csat, Qsed]...
-                = VelCon_SBE_GUI(SimParams,SimConds);     % Runs the flow dynamics function; "interp" variables no longer used
+                = VelCon(SimParams,SimConds);     % Runs the flow dynamics function; "interp" variables no longer used
     SimResults.D = D;
     SimResults.Deltay = Deltay;
     SimResults.z = ybed;
@@ -44,7 +44,7 @@ clearvars -except SimParams SimConds %Clean up the workspace;
     SimResults.Ush=ush;
     Simresults.Csat=Csat;
     SimResults.Qsed = Qsed;  
-        [SedBud]=FlowDur_SBE_GUI(SimConds,SimResults);% Runs the flow duration function
+        [SedBud]=FlowDur(SimConds,SimResults);% Runs the flow duration function
     SimResults.SedBud = SedBud;
         PercSedBud=[NaN 1:1:99 NaN];
         PercSedBud(1)=min(SimResults.SedBud);
