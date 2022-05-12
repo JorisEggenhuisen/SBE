@@ -1,1 +1,3 @@
 This folder contains examples with boundary conditions that can be used to reproduce the results of Eggenhuisen et al. (2022).
+
+Rename these files 'SimulationConditions.m', which is the fiunction name called by Run_SBE, to run the SBE with these conditions.
