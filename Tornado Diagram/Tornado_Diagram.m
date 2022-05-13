@@ -1,5 +1,5 @@
 
-%% create tornado plots for SBE sensitivity analyses and scenario comparissons
+%% create tornado plots for SBE sensitivity analyses and scenario comparissons, as in Figures 4, 8, & 10 of Eggenhuisen et al. (2022).
 
 % generate and load data
 
@@ -8,7 +8,7 @@ names={ 'High Concentration',...
     'Low Concentration'}; % Write the names of scenarios or parameter groups that ar eto be compared
 
 % load all the percentiles for the different simulations, one by one from
-% SBE result workspaces.
+% SBE result workspaces. This step has not been automated 
 
 PercSedBudSens=zeros(length(names),101);  % create a matrix that will contain all percentiles of the cases named in 'names'. 
 
@@ -29,7 +29,6 @@ snames{3}=names{1}; % sorting done
 % Initialise the  empty figure
 
 figure
-subplot(1,2,2)
 
 PI=NaN(size(sPercSedBudSens)); % No data to initiate the empty plot with space for all categories
 
@@ -101,13 +100,10 @@ for j=1:length(snames)
         
 end % done plotting the tornado diagram
 
-
 %% clear some variables, it is worth saving teh workspace with 'names' and 'PercSedBudSens' only
 
 %clear SimResults
-
 %clear incr step i kleur Classe bv
-
 %clear PercSedBudSens names
 
 clearvars -except PercSedBudSens names 
