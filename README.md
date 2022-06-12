@@ -7,6 +7,8 @@ This is version 1.0.0 of the Sediment Budget Estimator (SBE), which quantifies f
 
 Eggenhuisen, J.T., Tilston, M.C., Stevenson, C.J., Hubbard, S.M., Cartigny, M.J.B., Heijnen, M.S., de Leeuw, J., Pohl, F., and Spychala, Y.T. (2021) The Sediment Budget Estimator (SBE): a process-model for the stochastic estimation of fluxes and budgets of sediment through submarine channel systems. EarthArXiv, https://doi.org/10.31223/X5FK6K. 
 
+Please cite the code as: [![DOI](https://zenodo.org/badge/485391707.svg)](https://zenodo.org/badge/latestdoi/485391707)
+
 ## Set-up
 
 The SBE is written to be executed in Matlab. Version 1.0.0 has been tested up to MATLAB [R2019a0]. It makes use of the function 'percentile', which is part of the Statistics Toolbox. The SBE consists of 5 -.m files:
