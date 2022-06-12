@@ -5,11 +5,11 @@ Sediment Budget Estimator for deep sea depositional systems
 
 This is version 1.0.0 of the Sediment Budget Estimator (SBE), which quantifies flow structure (velocity & sediment concentration) and sediment flux for turbidity currents flowing down submarine channels and canyons, and integrates this over time to estimate the sediment budget of a parameterised deep sea depositional system. The model is described in the publication:
 
-Eggenhuisen [et al with https DOI link.] 
+Eggenhuisen, J.T., Tilston, M.C., Stevenson, C.J., Hubbard, S.M., Cartigny, M.J.B., Heijnen, M.S., de Leeuw, J., Pohl, F., and Spychala, Y.T. (2021) The Sediment Budget Estimator (SBE): a process-model for the stochastic estimation of fluxes and budgets of sediment through submarine channel systems. EarthArXiv, https://doi.org/10.31223/X5FK6K. 
 
 ## Set-up
 
-The SBE is written to be executed in Matlab. Version 1-0 has been tested up to MATLAB [R2019a0]. It makes use of the function 'percentile', which is part of the Statistics Toolbox. The SBE consists of 5 -.m files:
+The SBE is written to be executed in Matlab. Version 1.0.0 has been tested up to MATLAB [R2019a0]. It makes use of the function 'percentile', which is part of the Statistics Toolbox. The SBE consists of 5 -.m files:
 
 -Run_SBE.m Is the script that executes the Sediment Budget Estimator.
 -SimulationConditions.m The boundary condition ranges for the desired simulations are specified here.
@@ -19,12 +19,12 @@ The SBE is written to be executed in Matlab. Version 1-0 has been tested up to M
 
 Auxiliary -.m files:
 
-- The folder 'Boundary Conditions' contains versions of 'SimulationConditions.m' that can be used to reproduce the results of Eggenhuisen et al. (2022).
-- The folder 'Visualisations' contains example code that was use to produce the figures in Eggenhuisen et al. (2022). 
+- The folder 'Boundary Conditions' contains versions of 'SimulationConditions.m' that can be used to reproduce the results of Eggenhuisen et al. (2021).
+- The folder 'Visualisations' contains example code that was use to produce the figures in Eggenhuisen et al. (2021). 
 
 ## Author information 
 
-The Matlab code for the SBE was written by Joris Eggenhuisen & Mike Tilston. See Eggenhuisen et al. (2022) for a complete list of contributors to the scientific process.
+The Matlab code for the SBE was written by Joris Eggenhuisen & Mike Tilston. See Eggenhuisen et al. (2021) for a complete list of contributors to the scientific process.
 
 ## Potential Improvements 
 
